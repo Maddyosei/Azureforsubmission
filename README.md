@@ -69,6 +69,8 @@ The primary metric being used is accuracy.
 n_cross_validations
 This parameter sets how many cross validations to perform. I chose two folds as one cross-validation could result in overfit.
 
+The best model selected by AutoML was a voting ensemble which provided an accuracy of ~91.8%. The model selected enabled penalty to be placed on the number of non-zero model coefficients using regularisation. A soft voting method was used in which the class probabilities of all models were averaged and the highest probablility was selected in order to make a prediction. 
+
 ## Pipeline comparison
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
 HyperDrive Model	
